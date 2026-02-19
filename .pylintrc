@@ -19,6 +19,7 @@ disable=missing-function-docstring,
         missing-class-docstring,
         missing-module-docstring,
         import-outside-toplevel,
+        attribute-defined-outside-init,
         fixme
 
 
