@@ -1,9 +1,9 @@
 import waiting
 
-from surety.sdk import Field
-from surety.config import Cfg
 from waiting.exceptions import TimeoutExpired
 
+from surety.sdk import Field
+from surety.config import Cfg
 from surety.api.caller import ApiCaller
 from surety.api.method import ApiMethod
 from surety.api.mock.data import (

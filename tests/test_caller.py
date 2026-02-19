@@ -1,8 +1,8 @@
 import json
 
-from surety import Dictionary
 from requests import Response
 
+from surety import Dictionary
 from surety.api import ApiCaller
 from tests.data.dummy_api import CheckCall
 
