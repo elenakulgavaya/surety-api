@@ -21,6 +21,10 @@ disable=missing-function-docstring,
         import-outside-toplevel,
         fixme
 
+
+[TYPECHECK]
+ignored-modules=surety
+
 [BASIC]
 good-names=i,
            j,
