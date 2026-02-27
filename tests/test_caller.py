@@ -8,7 +8,7 @@ from tests.data.dummy_api import CheckCall
 
 
 class CheckCallCaller(ApiCaller):
-    method = CheckCall
+    contract = CheckCall
 
 
 def test_verify_response():

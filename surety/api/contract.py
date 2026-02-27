@@ -7,10 +7,10 @@ from surety.sdk import Field
 from surety.diff import compare
 
 from surety.api.mock.data import JsonFilter, MatchType, StringFilter
-from surety.api.schema import Schema, HttpMethod
+from surety.api.base import BaseContract, HttpMethod
 
 
-class ApiMethod(Schema):
+class ApiContract(BaseContract):
     @classmethod
     def call(cls, req_body=None, session=None, path_params=None, headers=None,
              params=None, cookies=None):

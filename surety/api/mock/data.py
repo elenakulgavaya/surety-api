@@ -1,6 +1,5 @@
-from surety.sdk import Bool, Dictionary, Enum, Int, Raw, String
-
-from surety.api.schema import HttpMethod
+from surety import Bool, Dictionary, Enum, Int, Raw, String
+from surety.api.base import HttpMethod
 
 
 class JsonMatcher(Enum):

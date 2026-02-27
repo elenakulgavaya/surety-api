@@ -4,7 +4,7 @@ import pytest
 
 from surety.config import Cfg
 
-from surety.api.schema import get_default_app_url
+from surety.api.base import get_default_app_url
 
 
 @pytest.fixture(autouse=True)

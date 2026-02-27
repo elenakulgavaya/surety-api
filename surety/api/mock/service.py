@@ -5,12 +5,12 @@ from waiting.exceptions import TimeoutExpired
 from surety.sdk import Field
 from surety.config import Cfg
 from surety.api.caller import ApiCaller
-from surety.api.method import ApiMethod
+from surety.api.contract import ApiContract
 from surety.api.mock.data import (
     Command, ExpectationBody, HttpRequest, HttpResponse, ObjectType, Params,
     PathParams, RetrieveBody, RetrieveHttpRequest, Times, UnaddressedRequest,
 )
-from surety.api.schema import HttpMethod
+from surety.api.base import HttpMethod
 
 
 def get_mockserver_url():
@@ -23,14 +23,14 @@ def get_mockserver_url():
 BASE_URL = get_mockserver_url()
 
 
-class RunCommand(ApiMethod):
+class RunCommand(ApiContract):
     method = HttpMethod.PUT
     url = 'mockserver/{command}'
     path_params = PathParams
 
 
 class MockClient(ApiCaller):
-    method = RunCommand
+    contract = RunCommand
 
     def __init__(self, command, params=None, headers=None, body=None):
         super().__init__(
