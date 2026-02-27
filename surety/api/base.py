@@ -25,7 +25,7 @@ class HttpMethod(Enum):
     OPTIONS = 'OPTIONS'
 
 
-class Schema:
+class BaseContract:
     """
       Additional configuration on module level:
       SERVICE: service name for mocking

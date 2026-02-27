@@ -1,7 +1,7 @@
 from surety.sdk import Dictionary, Int, String
 
-from surety.api.method import ApiMethod
-from surety.api.schema import HttpMethod
+from surety.api.contract import ApiContract
+from surety.api.base import HttpMethod
 
 
 SERVICE = 'dummy'
@@ -14,7 +14,7 @@ class CheckCallReq(Dictionary):
     Name = String(name='name')
 
 
-class CheckCall(ApiMethod):
+class CheckCall(ApiContract):
     method = HttpMethod.POST
     url = 'api/check_call'
     req_body = CheckCallReq
@@ -26,6 +26,6 @@ class PathParams(Dictionary):
     Param = String(name='param')
 
 
-class CheckParamsCall(ApiMethod):
+class CheckParamsCall(ApiContract):
     method = HttpMethod.GET
     url = 'api/{id}/get/{param}'

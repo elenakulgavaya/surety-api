@@ -2,11 +2,11 @@ from surety.process import dictionary
 from surety.sdk import Field
 from surety.diff import compare
 
-from surety.api.method import ApiMethod
+from surety.api.contract import ApiContract
 
 
 class ApiCaller:
-    method: ApiMethod
+    contract: ApiContract
 
     def __init__(self, req_body=None, path_params=None, headers=None,
                  params=None, cookies=None, updates=None):
@@ -35,7 +35,7 @@ class ApiCaller:
         elif isinstance(self.params, Field):
             params = self.params.value
 
-        self.response = self.method.call(
+        self.response = self.contract.call(
             req_body=req_body,
             path_params=self.path_params,
             headers=self.headers,
