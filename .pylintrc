@@ -9,10 +9,6 @@ ignore=LICENSE,
     pytest-coverage.txt,
     test-report.xml
 ignore-paths=dist,
-    fild-api-hug.egg-info
-
-py-version=3.11
-suggestion-mode=yes
 
 [MESSAGES CONTROL]
 disable=missing-function-docstring,
