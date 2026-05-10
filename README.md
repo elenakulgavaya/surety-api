@@ -1,8 +1,8 @@
-[![PyPI version](https://img.shields.io/pypi/v/surety-config.svg)](https://pypi.org/project/surety-config/)
-[![Python versions](https://img.shields.io/pypi/pyversions/surety-config.svg)](https://pypi.org/project/surety-config/)
-[![Downloads](https://img.shields.io/pypi/dm/surety-config.svg)](https://pypi.org/project/surety-config/)
-[![Tests](https://github.com/elenakulgavaya/surety-config/actions/workflows/test.yml/badge.svg)](https://github.com/elenakulgavaya/surety-config/actions?query=workflow%3ATests+branch%3Amain++)
-[![License](https://img.shields.io/pypi/l/surety-config.svg)](https://github.com/elenakulgavaya/surety-config/blob/main/LICENSE)
+[![PyPI version](https://img.shields.io/pypi/v/surety-api.svg)](https://pypi.org/project/surety-api/)
+[![Python versions](https://img.shields.io/pypi/pyversions/surety-api.svg)](https://pypi.org/project/surety-api/)
+[![Downloads](https://img.shields.io/pypi/dm/surety-api.svg)](https://pypi.org/project/surety-api/)
+[![Tests](https://github.com/elenakulgavaya/surety-api/actions/workflows/test.yml/badge.svg)](https://github.com/elenakulgavaya/surety-api/actions?query=workflow%3ATests+branch%3Amain++)
+[![License](https://img.shields.io/pypi/l/surety-api.svg)](https://github.com/elenakulgavaya/surety-api/blob/main/LICENSE)
 
 ------
 # Surety API
